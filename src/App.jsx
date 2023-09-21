@@ -1,10 +1,8 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Contact from './Pages/Contact/Contact'
-import Home from './Pages/Home/Home'
 import Layout from './Layout/Layout'
 import Error from './Pages/Error/Error'
+import About from './Pages/About/About'
 
 function App() {
 
@@ -15,8 +13,8 @@ function App() {
       errorElement: <Error/>,
       children:[
         {
-          path: "/contact",
-          element: <Contact/>,
+          path: "/about",
+          element: <About/>,
           errorElement: <Error/>,
         },
       ],
